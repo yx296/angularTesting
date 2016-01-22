@@ -1,0 +1,47 @@
+div {
+  box-sizing: border-box;
+}
+.boxHolder {
+  border: 1px solid black;
+  text-align: center;
+  font-size: 0;
+}
+
+.buttonHolder {
+  text-align: center;
+  position: relative;
+  top: 40px;
+}
+
+.box {
+  width: 180px;
+  height: 180px;
+  display: inline-block;
+  border: 1px solid black;
+  margin: 4px;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.mainBox {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  border: 1px solid black;
+  position: relative;
+  top: 80px;
+}

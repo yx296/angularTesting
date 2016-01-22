@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular Boxes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body ng-app="angularBoxes" ng-controller="angularBoxesCtrl as vm">
+  <div class="boxHolder">
+    <div ng-click="vm.addColor('green')" class="box green"></div>
+    <div ng-click="vm.addColor('blue')" class="box blue"></div>
+    <div ng-click="vm.addColor('red')" class="box red"></div>
+    <div ng-click="vm.addColor('yellow')" class="box yellow"></div>
+  </div>
+  <div class="buttonHolder">
+    <button ng-click="vm.undo()" class="undoButton">Undo</button>
+    <button ng-click="vm.redo()" class="redoButton">Redo</button>
+  </div>
+  <div class="mainBox" ng-class="vm.mainBoxColor"></div>
+
+  <!-- scripts -->
+<script src="/bower_components/angular/angular.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
