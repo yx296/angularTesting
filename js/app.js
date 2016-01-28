@@ -6,6 +6,7 @@ function angularBoxesCtrl() {
   vm.mainBoxColor;
 
   var colorHistory = [];
+  //storeColors
   var undoRedo = [];
 
   var changeColor = function() {
