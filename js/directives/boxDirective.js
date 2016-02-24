@@ -5,7 +5,7 @@ angular.module('angularBoxes')
     templateUrl: 'js/directives/template.html',
     replace: true,
     scope: {
-      addcolor: "&"
+      addColor: "&"
     },
     bindToController: true,
     controller: function($scope, $element, $attrs) {

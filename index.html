@@ -7,10 +7,10 @@
 </head>
 <body ng-app="angularBoxes" ng-controller="angularBoxesCtrl as vm">
   <div class="boxHolder">
-    <box color="green" addColor="vm.addColor(color)"></box>
-    <box color="blue" addColor="vm.addColor(color)"></box>
-    <box color="red" addColor="vm.addColor(color)"></box>
-    <box color="yellow" addColor="vm.addColor(color)"></box>
+    <box color="green" add-color="vm.addColor(color)"></box>
+    <box color="blue" add-color="vm.addColor(color)"></box>
+    <box color="red" add-color="vm.addColor(color)"></box>
+    <box color="yellow" add-color="vm.addColor(color)"></box>
   </div>
   <div class="buttonHolder">
     <button ng-click="vm.undo()" class="undoButton">Undo</button>
