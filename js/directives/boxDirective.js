@@ -7,9 +7,11 @@ angular.module('angularBoxes')
     scope: {
       addcolor: "&"
     },
-    link: function(scope, element, attrs) {
-      scope.boxColor = attrs.color
-      element.addClass(scope.boxColor);
-    }
+    bindToController: true,
+    controller: function($scope, $element, $attrs) {
+      this.color = $attrs.color;
+      $element.addClass(this.color)
+    },
+    controllerAs: 'box'
   }
 })

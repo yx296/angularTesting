@@ -15,6 +15,7 @@ function angularBoxesCtrl() {
 
 
   vm.addColor = function(boxColor) { 
+    console.log(boxColor);
     //mainBox is already same color as clicked box
     if (boxColor === vm.mainBoxColor) {
       return;
